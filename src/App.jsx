@@ -5,6 +5,8 @@ import Landing from './pages/Landing'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Dashboard from './pages/Dashboard'
+import Subscription from './pages/Subscription'
+import Profile from './pages/Profile'
 import Layout from './components/Layout'
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/dashboard" element={<Layout><Dashboard /></Layout>} />
+          <Route path="/subscription" element={<Subscription />} />
+          <Route path="/profile" element={<Layout><Profile /></Layout>} />
         </Routes>
       </Router>
     </>
